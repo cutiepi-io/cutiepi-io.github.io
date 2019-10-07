@@ -36,23 +36,7 @@
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <script src="js/dom-i18n.min.js"></script>
-  <script>
-    $('document').ready(function(){
-      i18n = window.domI18n({
-        selector: '[data-translatable]',
-        separator: ' // ',
-        languages: ['tw', 'en', 'cn'],
-        defaultLanguage: 'en'
-      });
-  
-      var language = window.navigator.userLanguage || window.navigator.languages[0] || window.navigator.language;
-      if (language === "zh-TW") {
-        i18n.changeLanguage('tw');
-      } else if (language === "zh-CN") {
-        i18n.changeLanguage('cn');
-      }
-    });
-  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2040009-6"></script>
 <script>
@@ -73,15 +57,12 @@
     <div class="mr-4"><a href="index.html"><img src="assets/pictures/logo.png" width="250" /></a></div>
     <div class="collapse navbar-collapse weight-500">
       <div class="navbar-nav">
-        <div class="nav-item"><a data-translatable class="nav-link text-dark" href="about.html">關於我們 // About</a></div>
+        <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
-        <div class="nav-item"><a data-translatable class="nav-link text-dark" href="mailto:hello@cutiepi.io">聯絡我們 // Contact Us</a></div>
+        <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>
       </div>
     </div>
-    <div class="ml-auto d-none d-lg-block"><a class="btn" href="#" onclick="i18n.changeLanguage('tw')">繁中</a></div>
-    <div class="ml-auto d-none d-lg-block"><a class="btn" href="#" onclick="i18n.changeLanguage('en')">EN</a></div>
-    <div class="ml-auto d-none d-lg-block"><a class="btn" href="#" onclick="i18n.changeLanguage('cn')">簡中</a></div>
   </div>
   <div class="navbar-side" id="headers-1-sidebar" data-id="headers-1-sidebar-close">
     <div class="navbar-side-content d-flex flex-column justify-content-between">
@@ -119,8 +100,8 @@
   <div class="row justify-content-between align-items-center py-5">
     <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="assets/pictures/heroshot.png" /></div>
     <div class="col-12 col-md-5">
-      <h1 data-translatable class="display-5">擺脫束縛、帶著你的程式到處探險 // Your Raspberry Pi Projects, Untethered // 放飞自我，带上你的应用即刻去探险</h1>
-      <p data-translatable class="large mb-4">CutiePi 是台一應俱全的樹莓派平板電腦，打開開關就能使用，所有你需要的創作工具都在裡面。帶上你的樹莓派專案，隨時隨地創造、盡情探索你的想法。 // CutiePi is an all-in-one Raspberry Pi tablet. Liberate your Pi project from the desk, and start creating wherever the idea strikes. // CutiePi 是一台开机即用，拥有必备的编程工具的一体化树莓派平板电脑。带上你的专属定制树莓派，随时随地创作，尽情探索、验证、实现你的奇思妙想。</p>
+      <h1 class="display-5">Your Raspberry Pi Projects, Untethered</h1>
+      <p class="large mb-4">CutiePi is an all-in-one Raspberry Pi tablet. Liberate your Pi project from the desk, and start creating wherever the idea strikes.</p>
 
 
       <form action="https://cutiepi.us20.list-manage.com/subscribe/post?u=0ec01d22dc994adab8145ce58&amp;id=2ac7027416" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
@@ -133,7 +114,7 @@
           </div>
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0ec01d22dc994adab8145ce58_2ac7027416" tabindex="-1" value=""></div>
         </div>
-        <p data-translatable class="small ml-2">訂閱以接收 CutiePi 平板的開發進度 // We will notify you when it’s ready // 订阅以了解 CutiePi 平板的开发进度</p>
+        <p class="small ml-2">We will notify you when it’s ready</p>
       </form>
     </div>
   </div>
@@ -147,23 +128,23 @@
   <div class="row py-5">
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <div class="d-flex align-items-center mb-2"><img class="mr-2" src="./assets/glyphs/rectangle-4.svg" width="40" />
-          <h3 data-translatable class="mb-0 mt-1">五臟俱全的硬體功能 // The all-in-one hacking platform // 你想要的都在这里</h3>
+          <h3 class="mb-0 mt-1">The all-in-one hacking platform</h3>
         </div>
-        <p data-translatable>CutiePi 將完整的樹莓派運作環境裝進平板的造型中，不再需要外接的螢幕與電源。由於使用了樹莓派的 Compute Module 模組，不但保有比開發板要纖瘦的身材，還增加了豐富的功能，並像一般電子產品一樣地攜帶與充電。 // CutiePi is a complete Raspberry Pi in a tablet form factor, 
-          minus the trouble of connecting monitor or power supply. It's slimmer because of using Compute Module, and you can carry or recharge it like your everyday gadgets. // CutiePi 将完整的树莓派运行环境装进平板中，无需外接屏幕和电源。小身板却不失性能的树莓派 Compute Module 模块，不仅使体积比树莓派开发板更小，还增加了丰富的功能，亦可像一般电子产品一样便携与充电。
+        <p>CutiePi is a complete Raspberry Pi in a tablet form factor, 
+          minus the trouble of connecting monitor or power supply. It's slimmer because of using Compute Module, and you can carry or recharge it like your everyday gadgets.
         </p> 
       </div>
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <div class="d-flex align-items-center mb-2"><img class="mr-2" src="./assets/glyphs/rectangle-6.svg" width="40" />
-          <h3 data-translatable class="mb-0">真正可用的觸控介面 // The out-of-the-box experience // 爱不释手的触控界面</h3>
+          <h3 class="mb-0">The out-of-the-box experience</h3>
         </div>
-        <p data-translatable>無論是打開熟悉的應用程式，遠端連線到伺服器工作，甚至是顯示自訂的儀表板，CutiePi 為了觸控螢幕量身打造的介面都能讓你輕易達成，也省去外接鍵盤滑鼠的必要。 // Whether you're opening an app, SSH-ing to a remote server, or displaying a dashboard, CutiePi's touch-friendly interface can help you with that. Connecting keyboards and mouse are no longer a necessity. // 不管是打开熟悉的应用软件，还是连接远程服务器，甚至显示自定的仪表盘，CutiePi 专属定制的触控界面都能让你轻松完成，省去了外接键盘鼠标的麻烦。</p>
+        <p>Whether you're opening an app, SSH-ing to a remote server, or displaying a dashboard, CutiePi's touch-friendly interface can help you with that. Connecting keyboards and mouse are no longer a necessity.</p>
       </div>
       <div class="col-12 col-md-4">
         <div class="d-flex align-items-center mb-2"><img class="mr-2" src="./assets/glyphs/rectangle-5.svg" width="40" />
-          <h3 data-translatable class="mb-0">完全開放、任意改造 // Free to make it yours // 完全开放、任意定制</h3>
+          <h3 class="mb-0">100% Free to make it yours</h3>
         </div>
-        <p data-translatable>因為我們始終相信開放的力量，也相信人們該握有對自己使用科技的主控權，你看到的一切成果都是開放授權的 — 從操作介面、電路設計到外殼造型，CutiePi 所有的軟硬體設計都可按照你的想法自由取用、任意改造。 // We love and support open source, and we believe people should have control over the technology they use. Everything we made, including the schematics, PCB, drivers, firmware, and UI is open source. // 因为我们始终相信开放的力量，也相信人们应该拥有自己使用科技的权力，你看到的一切成果都是关于开放授权的 —— 从操作界面，电路设计到外壳形状，CutiePi 所有的软硬件设计都可按照你的想法自由取用、任意定制。</p>
+        <p>We love and support open source, and we believe people should have control over the technology they use. Everything we made, including the schematics, PCB, drivers, firmware, and UI is open source.</p>
       </div>
   </div>
 </div>
@@ -173,8 +154,8 @@
   <div class="container">
     <div class="row justify-content-center text-center py-5">
       <div class="col-12 col-md-8 col-lg-10">
-        <h2 data-translatable>因為我們在意，所以設計了自己的硬體 // Because we care, we designed our own hardware. // 因为我们在意，所以自己设计了的硬件</h2>
-        <h2 data-translatable>也因為我們在意，所以將一切開放出來 // And because we are cool and care even more, we’ve made everything open. // 也因为我们在意，所以将一切开源出来</h2>
+        <h2>Because we care, we designed our own hardware.</h2>
+        <h2>And because we are cool and care even more, we’ve made everything open.</h2>
       </div>
     </div>
   </div>
@@ -187,10 +168,8 @@
         <div class="col-12 col-md-8 col-lg-6">
           <h4></h4>
           <h1>CutiePi board V1.0</h1>
-          <p data-translatable class="mb-4">專門為攜帶式樹莓派專案設計的嵌入式主板，強化了電源管理與鋰電池電量監測功能；並可以搭配 HDMI 或 MIPI DSI 螢幕使用。 // 
-            A custom CM3/CM3+ carrier board designed for portable use, with enhanced power management and Li-Po battery level monitoring features; works with selected HDMI or MIPI DSI displays. // 
-            专门为便携式树莓派项目设计的嵌入式主板，加强了电源管理与锂电池电量监测功能；并可以搭配 HDMI 或 MIPI DSI 屏幕使用。</p>
-          <a class="action-link" href="https://github.com/cutiepi-io/cutiepi-board"><span data-translatable>查看電路原理圖 // Check out the design files // 查看电路原理图</span></a>
+          <p class="mb-4">A custom CM3/CM3+ carrier board designed for portable use, with enhanced power management and Li-Po battery level monitoring features; works with selected HDMI or MIPI DSI displays.</p>
+          <a class="action-link" href="https://github.com/cutiepi-io/cutiepi-board"><span>Check out the design files</span></a>
         </div><img class="w-100 h-100" src="assets/pictures/board-detail.png" />
     </div>
   </div>
@@ -200,20 +179,19 @@
 <div class="container">
     <div class="row justify-content-between align-items-center py-5">
         <div class="col-12 col-md-6 order-2 order-md-1">
-          <h1 data-translatable>讓「可攜帶」變得容易 // Make Portability Easy // 让 “便携” 真正便携</h1>
+          <h1>Make Portability Easy</h1>
           <div class="row mb-4">
             <div class="col-6">
-              <h3 data-translatable>滿足路途中所需的一切介面 // Everything you need on the go // 满足旅途中所需的一切界面</h3>
-              <div data-translatable class="small">無論是想連上野生的 WiFi、臨時使用終端機輸入命令，或是操作網頁，CutiePi 的內建 UI 都能夠輕易達成。 // Connecting to free WiFi, typing commands in terminal, or logging in to webpages, CutiePi's built-in UI has you covered. // 无论连接户外的 WiFi、随时使用终端命令行，还是浏览网页，CutiePi 的内置UI都能够轻松完成。
-                </div>
+              <h3>Everything you need on the go</h3>
+              <div class="small">Connecting to free WiFi, typing commands in terminal, or logging in to webpages, CutiePi's built-in UI has you covered.</div>
             </div>
             <div class="col-6">
-              <h3 data-translatable>相容 Raspbian OS 的執行環境 // Fully compatible with Raspbian OS // 全面兼容 Raspbian OS 的运行环境</h3>
-              <div data-translatable class="small">在 Pi 開發板上完成的專案，能夠原封不動的搬到 CutiePi 上執行，說走就走，無憂無慮。 // Take your existing projects for Pi, deploy on CutiePi, and make it portable instantly. // 在 Pi 开发板上完成的项目，能够原封不动地搬到 CutiePi 上运行，说走就走，无忧无虑。                </div>
+              <h3>Fully compatible with Raspbian OS</h3>
+              <div class="small">Take your existing projects for Pi, deploy on CutiePi, and make it portable instantly.</div>
             </div>
           </div>
 
-          <a class="action-link" href="https://github.com/cutiepi-io/"><span data-translatable>查看 GitHub 上的源碼 // Check out the source code on GitHub // 查看 Github 上的源代码</span></a>
+          <a class="action-link" href="https://github.com/cutiepi-io/"><span >Check out the source code on GitHub</span></a>
         </div>
         <div class="col-12 col-md-5 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
           <div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/CN3FGvhz3sk" frameborder="0" allowfullscreen></iframe></div>
@@ -226,7 +204,7 @@
   <div class="row justify-content-between align-items-center py-5">
       <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="assets/pictures/cutiepi-spec.png" /></div>
       <div class="col-12 col-md-5">
-        <h1 data-translatable class="display-5">技術規格 // Specifications // 技术规格</h1>
+        <h1 class="display-5">Specifications</h1>
 
         <table class="table table-borderless table-sm">
           <tbody>
@@ -241,7 +219,7 @@
           </tbody>
         </table>
 
-        <p data-translatable style="color: #4C566A;">此處細節可能隨開發進度有所變更。 // Details are subject to change. // 此处细节可能随开发进度有所变化。</p>
+        <p style="color: #4C566A;">Details are subject to change.</p>
 
       </div>
   </div>
@@ -252,45 +230,45 @@
 <div class="container">
   <div class="row justify-content-center py-5">
       <div class="col-12 col-md-10 col-lg-10" id="accordion">
-        <h1 data-translatable class="mb-10">常見問題集 // Frequently Asked Questions // 常见问题</h1>
+        <h1 class="mb-10">Frequently Asked Questions</h1>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingOne" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" data-translatable>這台平板能執行什麼程式? // What kind of apps are supported? // 这台平板能运行什么应用？</a></h3>
+          <h3 class="mb-0"><a id="headingOne" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >What kind of apps are supported?</a></h3>
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body" data-translatable>
-            除了為觸控螢幕特別訂製的介面外，我們希望透過 XWayland 支援原本 Raspbian PIXEL 環境下的程式。 // Other than built-in apps and UI designed for the touch screen, we hope to support Raspbian PIXEL apps via XWayland. // 除了为触控屏特别定制的界面外，我们希望通过 XWayland 支持原生 Raspbian PIXEL 环境下的应用。
+          <div class="card-body" >
+            Other than built-in apps and UI designed for the touch screen, we hope to support Raspbian PIXEL apps via XWayland.
           </div>
         </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingTwo" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-translatable>目前的開發進度到哪裡? // How's the development progress? // 目前的开发进度是什么？            </a></h3>
+          <h3 class="mb-0"><a id="headingTwo" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >How's the development progress?</a></h3>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body" data-translatable>
-              EVT (CutiePi board V1.0) 已完成大部分的硬體功能測試與軟體驅動，即將進行 DVT，並且同步進行外殼設計。 // We have finished most of hardware enablements and driver verifications for EVT (CutiePi board V1.0), soon to start DVT and enclosure design. // EVT (CutiePi board V1.0) 已完成大部分硬件功能测试与软件驱动，即将进行 DVT，并且同步进行外壳设计。
+            <div class="card-body" >
+              We have finished most of hardware enablements and driver verifications for EVT (CutiePi board V1.0), soon to start DVT and enclosure design.
             </div>
           </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingThree" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-translatable>預計售價多少? // What's the target price? // 预计的售价是多少？</a></h3>
+          <h3 class="mb-0"><a id="headingThree" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >What's the target price?</a></h3>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body" data-translatable>
-              等到 DVT 硬體完成、並開始進行電檢時會比較清楚，請參考 BOM 表。 // We'll know better in DVT stage, however it will likely be in the $150-$250 range. Please find the bill of materials in design files if you can't wait. // 待 DVT 硬件完成，并开始进行电检时才会比较清楚，请参考 BOM 表。
+            <div class="card-body" >
+              We'll know better in DVT stage, however it will likely be in the $150-$250 range. Please find the bill of materials in design files if you can't wait.
             </div>
           </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingFour" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-translatable>會採用群眾募資的方式嗎? // Do you plan to crowdfund? // 这款平板会采用众筹的方式吗？</a></h3>
+          <h3 class="mb-0"><a id="headingFour" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >Do you plan to crowdfund?</a></h3>
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-            <div class="card-body" data-translatable>
-              因為團隊不具備量產經驗，除非不得已，否則希望以獨資的方式開發產品。 // Not at the moment. // 因为团队不具备量产经验，除非不得已，否则希望以独资的方式开发和发布产品。
+            <div class="card-body" >
+              We might, check out <a href="https://medium.com/cutiepi/cutiepi-first-serving-general-updates-df654c0f8cdf#be12">the blog post</a> for more detail. 
             </div>
           </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingFive" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-translatable>有沒有預定發售日期? // Any release date? // 有无预售日期？</a></h3>
+          <h3 class="mb-0"><a id="headingFive" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >Any release date?</a></h3>
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-            <div class="card-body" data-translatable>
-              預計 2019 年底前推出。 // We are targeting end of 2019. // 预计在2019年年底前推出。
+            <div class="card-body" >
+              We are targeting end of 2019.
             </div>
           </div>
       </div>
@@ -303,7 +281,7 @@
   <div class="py-5">
       <div class="row justify-content-center text-center pt-3">
         <div class="col-12 col-md-8">
-          <h4 data-translatable>訂閱以接收 CutiePi 平板的開發進度 // Subscribe to development updates // 订阅以了解 CutiePi 平板的开发进度</h4>
+          <h4>Subscribe to development updates</h4>
         </div>
       </div>
       <div class="row justify-content-center text-center pb-3">
