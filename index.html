@@ -59,8 +59,10 @@
       <div class="navbar-nav">
         <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
+        <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>
+        <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
       </div>
     </div>
   </div>
@@ -71,8 +73,10 @@
           <div class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
+          <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>
+          <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
         </div>
       </div>
       <div>
@@ -93,16 +97,36 @@
         $('#headers-1-sidebar').removeClass('show');
       });
     });
+    $(document).ready(function() {
+      var videoSrc;
+      $('.video-btn').click(function() {
+        videoSrc = $(this).data( "src" );
+      });
+      $('#myModal').on('shown.bs.modal', function (e) {
+        $("#video").attr('src', videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0&cc_load_policy=1" ); 
+      });
+      $('#myModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src', videoSrc); 
+      });
+    });
   </script>
 
   <!--right-2+3-->
 <div class="container">
 
 <div class="row justify-content-between align-items-center py-5">
-  <div class="col-12 col-md-5 order-2 order-md-1">
+  <div class="col-12 col-md-6 order-2 order-md-1">
     <h1 class="display-5">Your Raspberry Pi Projects, Untethered</h1>
-    <p class="large mb-4">CutiePi is a complete Raspberry Pi in a tablet form factor. Liberate your Pi project from the desk, and start creating wherever the idea strikes.</p>
+    <p class="large mb-4">CutiePi is an ultra portable Raspberry Pi creation kit, in a tablet. <br>
+      Liberate your Pi project from the desk, and start creating wherever an idea strikes you.</p>
 
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 mb-2 mb-md-0"><a class="btn btn-block btn-lg btn-primary" href="https://www.kickstarter.com/projects/745629624/cutiepi-raspberry-pi-untethered">Pre-Order Now</a></div>
+        <div class="col-12 col-md-6 text-center text-md-left">
+          <div class="small ml-md-6">Crowdfunding Now On Kickstarter<br> Pre-Order Now & <strong>Save Up To $60</strong></div>
+        </div>
+      </div>
+<!--
     <form action="https://cutiepi.us20.list-manage.com/subscribe/post?u=0ec01d22dc994adab8145ce58&amp;id=2ac7027416" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
       <div class="input-group mb-2"><input class="form-control form-control-lg" name="EMAIL" id="mce-EMAIL" type="email" placeholder="Email" />
         <div class="input-group-append"><button class="btn btn-lg btn-primary" type="submit">Sign me up!</button></div>
@@ -114,9 +138,32 @@
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0ec01d22dc994adab8145ce58_2ac7027416" tabindex="-1" value=""></div>
       <p class="small ml-2">We will notify you when it’s ready</p>
     </form>
+  -->
   </div>
-  <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="./assets/pictures/cutiepi-heroshot.png" /></div>
+  <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-0 mb-md-0">
+    <div class="images-ratio ratio-4-3 w-100 mb-0" style="background-image: url(./assets/pictures/cutiepi-heroshot.png); background-repeat: no-repeat; background-size: 100%;">
+      <a class="transparent-invert-link video-btn" href="#"data-toggle="modal" data-src="https://www.youtube.com/embed/Ou64F_nNd10" data-target="#myModal">
+        <img src="./assets/glyphs/play.svg" width="64" /></a>
+    </div>
+  </div>
 </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
 
 </div>
 
@@ -207,7 +254,7 @@
             <tr><th scope="row">I/O</th><td>6x GPIO pins<br> 1x USB type-A<br> 1x USB type-C charging<br>1x micro HDMI<br>1x microSD slot</td></tr>
             <tr><th scope="row">Dimensions</th><td>213(W) x 134(H) x 12(D) mm</td></tr>
             <tr><th scope="row">Weights</th><td>360g</td></tr>
-            <tr><th scope="row">OS</th><td>Raspberry Pi OS + UI built with Qt</td></tr>
+            <tr><th scope="row">OS</th><td>Raspberry Pi OS + CutiePi shell</td></tr>
           </tbody>
         </table>
 
@@ -273,14 +320,14 @@
   <div class="py-5">
       <div class="row justify-content-center text-center pt-3">
         <div class="col-12 col-md-8">
-          <h4>Subscribe to development updates</h4>
+          <h4>Subscribe to product updates</h4>
         </div>
       </div>
       <div class="row justify-content-center text-center pb-3">
         <div class="col-12 col-md-8 col-lg-6">
           <form class="input-group mb-3" action="https://cutiepi.us20.list-manage.com/subscribe/post?u=0ec01d22dc994adab8145ce58&amp;id=2ac7027416" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
             <input class="form-control form-control-lg" name="EMAIL" id="mce-EMAIL-footer" placeholder="Email" />
-            <div class="input-group-append"><button class="btn btn-primary btn-lg btn-block" type="submit">Notify me</button></div>
+            <div class="input-group-append"><button class="btn btn-primary btn-lg btn-block" type="submit">Sign me up</button></div>
             <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -302,8 +349,10 @@
       <div class="navbar-nav d-block d-lg-flex justify-content-center">
           <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
+          <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
-          <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>    
+          <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>   
+          <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div> 
       </div>
     </div>
   </div>
