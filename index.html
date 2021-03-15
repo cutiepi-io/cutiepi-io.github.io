@@ -60,6 +60,7 @@
         <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
+        <div class="nav-item"><a class="nav-link text-dark" href="https://shop.cutiepi.io/products/cutiepi-tablet">Shop</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>
         <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
@@ -74,6 +75,7 @@
           <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
+          <div class="nav-item"><a class="nav-link text-dark" href="https://shop.cutiepi.io/products/cutiepi-tablet">Shop</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div>
@@ -117,29 +119,107 @@
 <div class="row justify-content-between align-items-center py-5">
   <div class="col-12 col-md-6 order-2 order-md-1">
     <h1 class="display-5">Your Raspberry Pi Projects, Untethered</h1>
-    <p class="large mb-4">CutiePi is an ultra portable Raspberry Pi creation kit, in a tablet form factor. 
-      Liberate your Pi project from the desk, and start creating wherever an idea strikes you.</p>
+    <p class="large mb-3">CutiePi is a Raspberry Pi 4 tablet that turns your project into an untethered adventure. 
+      Build and create wherever an idea strikes you. No wires, no external power, and no strings attached.</p>
 
-<!--
-      <div class="row align-items-center">
-        <div class="col-12 col-md-5 mb-2 mb-md-0"><a class="btn btn-block btn-lg btn-primary" href="https://www.kickstarter.com/projects/745629624/cutiepi-raspberry-pi-untethered">Pre-Order Now</a></div>
-        <div class="col-12 col-md-6 text-center text-md-left">
-          <div class="small ml-md-6">Crowdfunding Now On Kickstarter<br> Pre-Order Now & <strong>Save Up To $60</strong></div>
-        </div>
-      </div>
--->
-
-    <form action="https://cutiepi.us20.list-manage.com/subscribe/post?u=0ec01d22dc994adab8145ce58&amp;id=2ac7027416" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-      <div class="input-group mb-2"><input class="form-control form-control-lg" name="EMAIL" id="mce-EMAIL" type="email" placeholder="Email" />
-        <div class="input-group-append"><button class="btn btn-lg btn-primary" type="submit">Sign me up!</button></div>
-      </div>
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0ec01d22dc994adab8145ce58_2ac7027416" tabindex="-1" value=""></div>
-      <p class="small ml-2">Next batch of pre-orders opening soon, sign up for notification.</p>
-    </form>
+      <div id='product-component-1615729708795'></div>
+      <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'cutiepi-io.myshopify.com',
+            storefrontAccessToken: 'bdf3d696c409900887156d6c4b718c7e',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+              id: '6570696048800',
+              node: document.getElementById('product-component-1615729708795'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+        "product": {
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "calc(25% - 20px)",
+                "margin-left": "20px",
+                "margin-bottom": "50px"
+              }
+            }
+          },
+          "buttonDestination": "checkout",
+          "contents": {
+            "img": false,
+            "title": false,
+            "price": false
+          },
+          "text": {
+            "button": "Pre-order Now"
+          }
+        },
+        "productSet": {
+          "styles": {
+            "products": {
+              "@media (min-width: 601px)": {
+                "margin-left": "-20px"
+              }
+            }
+          }
+        },
+        "modalProduct": {
+          "contents": {
+            "img": false,
+            "imgWithCarousel": true,
+            "button": false,
+            "buttonWithQuantity": true
+          },
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "40px",
+                "margin-bottom": "0px"
+              }
+            }
+          },
+          "text": {
+            "button": "Add to cart"
+          }
+        },
+        "option": {},
+        "cart": {
+          "text": {
+            "total": "Subtotal",
+            "button": "Checkout"
+          },
+          "popup": false
+        },
+        "toggle": {}
+      },
+            });
+          });
+        }
+      })();
+      /*]]>*/
+      </script>
+      <p class="small ml-2 mt-2">Pre-orders are now open, estimated delivery in July, 2021.</p>
 
   </div>
   <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-0 mb-md-0">
@@ -175,20 +255,9 @@
   <div class="row justify-content-between align-items-center py-5">
     <div class="col-12 col-md-7 pl-md-0 mb-4 mb-md-0"><img class="w-100" src="./assets/pictures/cutiepi-software.png" /></div>
     <div class="col-12 col-md-4">
-      <h1 class="display-5">The all-in-one creation kit</h1>
-
-      <div class="row">
-        <div class="col-6">
-          <h4>Play as You Go</h4>
-          <div class="small">The battery level reading and power management features allow you to carry or recharge it like your everyday gadgets.</div>
-        </div>
-
-        <div class="col-6">
-          <h4>Untangle the Wires</h4>
-          <div class="small">With the touchscreen and battery built in, there's no longer a need to connect a keyboard, monitor or power supply to set up your Pi.</div>
-        </div>
-      </div>
-
+      <h1 class="display-5">Everthing you need on the go</h1>
+      <p class="large mb-2">Powered by a 8-inch multi-touch screen, a 5000 mAh battery, and the Raspberry Pi Compute Module 4, CutiePi is everything you need to start working on the Raspberry Pi. </p>
+      <p class="large mb-4">The built-in power management and battery level reading features can ease your anxiety around battery life, as you can simply carry or recharge it like your everyday gadgets.</p>
     </div>
   </div>
 
@@ -202,8 +271,9 @@
     <div class="row justify-content-between align-items-center py-5">
       <div class="col-12 col-md-6 order-2 order-md-1">
         <h1 class="display-5">Make portability easy</h1>
-        <p class="large mb-4">Take your existing projects for Pi, load it onto CutiePi, and run it right away. Make your project portable couldn't be easier.</p>
-        <p class="large mb-4">CutiePi shell, our open source mobile UI, turns Raspberry Pi OS into a functional tablet UX while maintaining compatibility. It provides everything you need on the go: from typing a command in terminal, connecting to a WiFi hotspot, to logging into webpages.</p>
+        <p class="large mb-4">Take your existing projects for the Pi, load it onto CutiePi, and run it right away. Make your project portable couldn't be easier.</p>
+        <p class="large mb-2">CutiePi shell, our mobile UI powered by the open source Qt framework, turns Raspberry Pi OS into a functional tablet UX while maintaining compatibility. </p>
+        <p class="large mb-2">It has most basic functions covered, from typing a command in terminal, connecting to a WiFi hotspot, to logging into web.</p>
 
         <a class="action-link" href="https://www.youtube.com/watch?v=ivkR3tvci1Q"><span>See CutiePi shell in action</span></a>
      </div>
@@ -219,7 +289,7 @@
     <div class="row justify-content-center text-center py-5">
       <div class="col-12 col-md-8 col-lg-10">
         <h2>Because we care, we designed our own hardware.</h2>
-        <h2>And because we are cool and care even more, we’ve made everything open.</h2>
+        <h2>And because we are cool and care even more, we’ve made everything open source.</h2>
       </div>
     </div>
   </div>
@@ -249,19 +319,16 @@
 
         <table class="table table-borderless table-sm">
           <tbody>
-            <tr><th scope="row">Processor</th><td>Raspberry Pi Compute Module 4, Wireless, 2GB Lite (CM4102000)</td></tr>
+            <tr><th scope="row">Processor</th><td>BCM2711, Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz<br>Raspberry Pi Compute Module 4, Wireless, 2GB Lite (CM4102000)</td></tr>
             <tr><th scope="row">Display</th><td>8” IPS LCD (1280x800)</td></tr>
             <tr><th scope="row">Battery</th><td>Li-Po 5000 mAh</td></tr>
             <tr><th scope="row">Connectivity</th><td>WLAN 802.11 b/g/n, Bluetooth 4.0</td></tr>
-            <tr><th scope="row">Camera</th><td>5MP (OV5647)</td></tr>
-            <tr><th scope="row">I/O</th><td>6x GPIO pins<br> 1x USB type-A<br> 1x USB type-C charging<br>1x micro HDMI<br>1x microSD slot</td></tr>
-            <tr><th scope="row">Dimensions</th><td>213(W) x 134(H) x 12(D) mm</td></tr>
+            <tr><th scope="row">Camera</th><td>Rear-facing camera 5MP (OV5647)</td></tr>
+            <tr><th scope="row">I/O</th><td>1x USB type-A<br> 1x USB type-C (charging and OTG)<br>1x micro HDMI<br>1x microSD slot</td></tr>
+            <tr><th scope="row">Dimensions</th><td>206(W) x 134(H) x 14(D) mm</td></tr>
             <tr><th scope="row">OS</th><td>Raspberry Pi OS + CutiePi shell</td></tr>
           </tbody>
         </table>
-
-        <p style="color: #4C566A;">Details are subject to change.</p>
-
       </div>
   </div>
 </div>
@@ -289,11 +356,11 @@
           </div>
         </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingTwo" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >How's the development progress?</a></h3>
+          <h3 class="mb-0"><a id="headingTwo" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >How's the shipping schedule?</a></h3>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body" >
-              We have finished most of hardware enablements and driver verifications for DVT (CutiePi board V1.2), as well as enclosure design. 
+              We've started mass production of CutiePi. We'll fulfill the backer pledges from Kickstarter first, then gradually move on to the second batch of pre-orders.
             </div>
           </div>
         <div class="border-bottom py-2">
@@ -301,15 +368,15 @@
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
             <div class="card-body" >
-              It's starting from $169, with a suggested retail price $229. 
+              Second batch pre-orders are starting from $199, with a suggested retail price $229. 
             </div>
           </div>
         <div class="border-bottom py-2">
-          <h3 class="mb-0"><a id="headingSix" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive" >Any release date?</a></h3>
+          <h3 class="mb-0"><a id="headingSix" class="text-dark caret-right" href="#" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive" >Where can I buy it?</a></h3>
         </div>
         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
             <div class="card-body" >
-              We are live now on <a href="https://www.kickstarter.com/projects/745629624/cutiepi-raspberry-pi-untethered">Kickstarter</a>.
+              You can buy it now on <a href="http://shop.cutiepi.io/">Shopify</a>.
             </div>
           </div>
       </div>
@@ -352,6 +419,7 @@
           <div class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://medium.com/cutiepi">Blog</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="https://t.me/cutiepi_io">Community</a></div>
+          <div class="nav-item"><a class="nav-link text-dark" href="https://shop.cutiepi.io/products/cutiepi-tablet">Shop</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="assets/CutiePi-MediaKit.zip">Press Kit</a></div>
           <div class="nav-item"><a class="nav-link text-dark" href="mailto:hello@cutiepi.io">Contact Us</a></div>   
           <div class="nav-item"><a class="nav-link text-dark" href="privacy.html">Privacy Policy</a></div> 
