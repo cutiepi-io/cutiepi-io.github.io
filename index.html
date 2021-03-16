@@ -122,104 +122,14 @@
     <p class="large mb-3">CutiePi is a Raspberry Pi 4 tablet that turns your project into an untethered adventure. 
       Build and create wherever an idea strikes you. No wires, no external power, and no strings attached.</p>
 
-      <div id='product-component-1615729708795'></div>
-      <script type="text/javascript">
-      /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'cutiepi-io.myshopify.com',
-            storefrontAccessToken: 'bdf3d696c409900887156d6c4b718c7e',
-          });
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
-              id: '6570696048800',
-              node: document.getElementById('product-component-1615729708795'),
-              moneyFormat: '%24%7B%7Bamount%7D%7D',
-              options: {
-        "product": {
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px"
-              }
-            }
-          },
-          "buttonDestination": "checkout",
-          "contents": {
-            "img": false,
-            "title": false,
-            "price": false
-          },
-          "text": {
-            "button": "Pre-order Now"
-          }
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        },
-        "modalProduct": {
-          "contents": {
-            "img": false,
-            "imgWithCarousel": true,
-            "button": false,
-            "buttonWithQuantity": true
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "100%",
-                "margin-left": "40px",
-                "margin-bottom": "0px"
-              }
-            }
-          },
-          "text": {
-            "button": "Add to cart"
-          }
-        },
-        "option": {},
-        "cart": {
-          "text": {
-            "total": "Subtotal",
-            "button": "Checkout"
-          },
-          "popup": false
-        },
-        "toggle": {}
-      },
-            });
-          });
-        }
-      })();
-      /*]]>*/
-      </script>
-      <p class="small ml-2 mt-2">Pre-orders are now open, estimated delivery in July, 2021.</p>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 mb-2 mb-md-0"><a class="btn btn-block btn-lg btn-primary" href="https://shop.cutiepi.io/products/cutiepi-tablet">Pre-Order Now</a></div>
+        <div class="col-12 col-md-6 text-center text-md-left">
+          <div class="small ml-md-6">Pre-orders are now open, estimated delivery in July, 2021.</div>
+        </div>
+      </div>
+
+
 
   </div>
   <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-0 mb-md-0">
